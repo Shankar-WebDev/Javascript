@@ -43,7 +43,7 @@ let options = {
   items: ['item1', 'item2'],
 };
 
-function showMenu({ title, width: w = 100, hight: h = 200 }) {
+function showMenu({ title = 'Untitled', width: w = 100, hight: h = 200 }) {
   console.log(`${title} ${w} ${h}`);
   console.log(item1);
   console.log(item2);
