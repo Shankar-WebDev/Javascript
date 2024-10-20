@@ -19,7 +19,31 @@ console.log(arr);
 function Person(firstName, lastName, pl) {
   this.firstName = firstName;
   this.lastName = lastName;
-  this.pl=pl;
+  this.pl = pl;
 }
-const man = new Person('shankr', 19, "Javascript");
-console.log(man)
+const man = new Person('shankr', 19, 'Javascript');
+console.log(man);
+
+//*************** change the build-in Method */
+
+//console.log (Array.prototype)
+
+Array.prototype.pop = function () {
+  return 'Pop IT Up Bae';
+};
+
+const myArr = ['one', 'two', 'three'];
+console.log(myArr.pop());
+console.log(myArr);
+
+//--------------------------------------------------------
+
+String.prototype.hello = function () {
+  console.log(this);
+  console.log(this.toUpperCase());
+};
+
+console.log('hello and welcome'.hello());
+
+const arr1 = ['allo', 'bello', 'clleo'];
+console.log(arr1);
